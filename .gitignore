@@ -1,52 +1,133 @@
-# Prerequisites
-*.d
+## Игнорировать временные файлы Visual Studio, результаты сборки и
+## файлы, создаваемые популярными дополнениями Visual Studio.
 
-# Object files
-*.o
-*.ko
-*.obj
-*.elf
+# Пользовательские файлы
+*.suo
+*.user
+*.sln.docstates
 
-# Linker output
+# Результаты сборки
+
+[Dd]ebug/
+[Rr]elease/
+x64/
+[Bb]в/
+[Oo]bj/
+
+# Результаты теста MSTest
+[Tt]есть[Rr]результат*/
+[Bb]uild[Ll]og.*
+
+*_i.c
+*_p.c
+*_i.h
 *.ilk
-*.map
-*.exp
-
-# Precompiled Headers
-*.gch
+*.meta
+*.obj
 *.pch
-
-# Libraries
-*.lib
-*.a
-*.la
-*.lo
-
-# Shared objects (inc. Windows DLLs)
-*.dll
-*.so
-*.so.*
-*.dylib
-
-# Executables
-*.exe
-*.out
-*.app
-*.i*86
-*.x86_64
-*.hex
-
-# Debug files
-*.dSYM/
-*.su
-*.idb
 *.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.сборки
+*.pidb
+*.log
+*.svclog
+*.scc
 
-# Kernel Module Compile Results
-*.mod*
-*.cmd
-.tmp_versions/
-modules.order
-Module.symvers
-Mkfile.old
-dkms.conf
+# Файлы кэша Visual C ++
+ipch/
+*.aps
+*.ncb
+*.opensdf
+*.sdf
+*.cachefile
+
+# Visual Studio profiler
+*.psess
+*.vsp
+*.vspx
+
+# Guidance Automation Toolkit
+*.gpState
+
+# ReSharper is a .NET coding add-in
+_ReSharper*/
+*.[Rr]e[Ss]harper
+*.DotSettings.user
+
+# Click-Once directory
+publish/
+
+# Publish Web Output
+*.Publish.xml
+*.pubxml
+*.azurePubxml
+
+# Каталог пакетов NuGet
+## ЗАДАЧА: если у вас включено восстановление пакета NuGet, раскомментируйте следующую строку
+Упаковка/
+## ЗАДАЧА: если для используемого вами инструмента требуется repositories.config, также раскомментируйте следующую строку
+пакеты!/репозитории.config
+
+# Вывод сборки Windows Azure
+csx/
+*.build.csdef
+
+# Каталог пакетов приложений магазина Windows Store
+Пакеты приложений/
+
+# Другие
+sql/
+*.Cache
+ClientBin/
+[Ss]тип[Cc]op.*
+![Ss]тип[Cc]op.targets
+~$*
+*~
+*.dbmdl
+.*[Pp]ublish.xml
+
+*.publishsettings
+
+# RIA/Silverlight projects
+Сгенерированный код/
+
+# Резервное копирование файлов и создание отчетов в результате преобразования старого файла проекта в более новый
+# Версия Visual Studio. Резервные копии файлов не нужны, потому что у нас есть git ;-)
+_получение_файлов/
+*Резервное копирование/
+Журнал обновления*.XML
+Журнал обновлений*.htm
+
+# Файлы SQL Server
+App_Data/*.mdf
+App_Data/*.ldf
+
+# =========================
+# Осколки Windows
+# =========================
+
+# Кэширование файлов образов Windows
+Thumbs.db
+ehthumbs.db
+
+# Файл конфигурации папки
+Desktop.ini
+
+# Корзина, используемая в общих файловых ресурсах
+$RECYCLE.BIN/
+
+# Служба хранения файлов для настольных компьютеров Mac
+.DS_Store
+
+_NCrunch*
